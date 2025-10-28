@@ -8,4 +8,12 @@ jobs:
     steps:
       - name: Print Hello Message
         run: echo "Hello, World from GitHub Actions!"
+        on: [pull]
+
+jobs:
+  hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print Hello Message
+        run: echo "Hello, World from GitHub Actions! welcome"
 
